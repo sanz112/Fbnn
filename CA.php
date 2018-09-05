@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,10 +34,7 @@ body{font-family:'Open Sans',serif;padding-top:24px;color:#868e96}@media (min-wi
           <li class='nav-item'>
             <a class='step nav-link js-scroll-trigger' href='#b'>2</a>
           </li>
-		   <li class='nav-item'>
-            <a class='step nav-link js-scroll-trigger' href='#c'>3</a>
-          </li>
-		   
+        
         </ul>
       </div>
     </nav>
@@ -129,25 +127,23 @@ button:hover {
   }
 }
 </style>
-
 <form id="regForm" action="#">
 <div style="overflow:auto;">
-    <div style="">
+   
       <button class="col-sm-5 btn btn-success btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
       <button class="col-sm-5 btn btn-success btn-lg" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-    </div>
   </div>
   <div class="form-group tab">
 <div class="form-group mb-2 mr-sm-2 ">
     <label for="email2" class="mb-2 mr-sm-2">Branch:</label>
     <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
     </div>
-<div id="a" class="col-12 p-3" style=" background: blue; color: #fff;"> APPLICATION TO OPEN A CORPORATE ACCOUNT </div>
+<div id="a" class="col-12 p-2" style="margin-top: 5px; background: blue; color: #fff;"> APPLICATION TO OPEN A CORPORATE ACCOUNT </div>
     <div class="form-group mb-2 mr-sm-2 pt-3 ">
     <label for="email2" class="mb-2 mr-sm-2">Account No.(Official use only):</label>
     <input type="number" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
     </div>
-    <div class="col-12 p-3" style="text-transform:uppercase; background: blue; color: #fff;"> Companies Details
+    <div class="col-12 p-2" style="text-transform:uppercase; background: blue; color: #fff;"> Companies Details
      (Please complete in BLOCKED LETTERS and tick where necessary)</div>
      <strong class="pt-2">Account Type :</strong>
   
@@ -228,7 +224,7 @@ button:hover {
 	</div>
 
   <div class="form-group tab">
-  <div id="b" class="col-12 p-3" style="width: 100%; padding: 10px; background: blue; color: #fff;">ANNUAL TURNOVER</div>
+  <div id="b" class="col-12 p-2" style="width: 100%; margin-top:5px; background: blue; color: #fff;">ANNUAL TURNOVER</div>
 <div class="col-12"> Type: </div>
 <div class="row col-12">
     <div class="form-group mb-2 mr-sm-2">
@@ -269,7 +265,7 @@ Is Your Company Quoted On the Stock Exchange ?
     </div> 
     </div> 
 
-<div class="col-12 p-2" style=" background: blue; color: #fff;">ACCOUNT SERVICE(S) REQUIRED (Please check option below)</div>
+<div class="col-12 p-2" style="margin-top:5px; background: blue; color: #fff;">ACCOUNT SERVICE(S) REQUIRED (Please check option below)</div>
 
 <div><u> Card </u></div>
 <div class="col-12 row">
@@ -291,7 +287,7 @@ Is Your Company Quoted On the Stock Exchange ?
     </div>
  
 
-<div> Cheque Book <i>(fees apply)</i></div>
+<div> <u>Cheque Book <i>(fees apply)</i></u></div>
 <div class="col-12 row">
 <div class="form-group mb-2 mr-sm-2 ">
       <label class="form-group-label ">
@@ -366,7 +362,8 @@ any cheque N200,000.00 and above. If you would like to have a higher threshold f
     <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
     </div>
 </div>
-<div class="tab">
+
+<div class="form-group tab">
 <h3 class="text-center"> Thanks for filing the form </h3>
   </div>
   <!-- Circles which indicates the steps of the form: -->
@@ -392,7 +389,7 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "That's the end of this form"";
+    document.getElementById("nextBtn").innerHTML = "That's the end of the form";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
